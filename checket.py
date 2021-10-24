@@ -13,7 +13,7 @@ for keyword in keywords:
         domains.append(f"{keyword}.{tld}")
 
 
-def whois_query(domain: str) -> str | None:
+def whois_query(domain: str):
     """
     Sends a WHOIS query to check if a domain is available
     """
