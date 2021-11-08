@@ -65,6 +65,9 @@ but keep in mind that it can happen.
 pip install poetry
 ```
 
+- Navigate to the folder containing this repository's files
+  - If you're unsure how to do this, look up `cd` and the name of your operating system online
+
 - Set up the dependencies
 
 ```
