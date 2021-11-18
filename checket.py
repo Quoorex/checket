@@ -17,10 +17,10 @@ def whois_query(domain: str):
     """
     Sends a WHOIS query to check if a domain is available
     """
-    w = whois.whois(domain)
-    if w.get("domain_name") is None:
+    try:
+        w = whois.whois(domain)
+    except whois.parser.PywhoisError:
         return domain
-
 
 pool = Pool(2)
 available_domains = pool.map_async(whois_query, domains)
